@@ -5,7 +5,7 @@
 	font-family: 'Josefin Sans', sans-serif;
 	scroll-behavior: smooth;
 	max-width: 100%;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 .container {
@@ -28,7 +28,7 @@ nav {
 	justify-content: space-between;
 	width: 85%;
 	padding: 18px 0;
-	position: sticky;
+	position: fixed;
 	top: 34px;
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(6px);
@@ -47,6 +47,16 @@ nav {
 
 span {
 	color: #10b2aa;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu {
+	display: none;
 }
 
 nav ul li {
@@ -89,13 +99,18 @@ h3 {
 h4 {
 	color: rgb(163, 163, 163);
 	font-size: 20px;
+	margin-bottom: 7px;
 }
 
 .about {
 	width: 100%;
-	padding: 180px 0px 180px 0px;
+	padding: 160px 0px 160px 0px;
 	background-color: #0e0e0e;
-	margin-top: 44vh;
+	margin-top: 60vh;
+}
+
+.main-mobile {
+	display: none;
 }
 
 .about img {
@@ -125,6 +140,7 @@ h4 {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	padding: 100px 0 0;
 }
 
 .about-text h2 {
@@ -169,7 +185,6 @@ h4 {
 	justify-content: center;
 	align-items: center;
 	margin: 30px 20px;
-	height: 375px;
 }
 
 .card {
@@ -230,7 +245,7 @@ h5 {
 
 .more-content {
 	width: 90vh;
-	margin-top: 22px;
+	margin-top: 30px;
 }
 
 .name {
@@ -391,8 +406,383 @@ footer {
 }
 
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 913px) {
+	.menu {
+		display: flex;
+	}
+
+	.img-menu {
+		width: 28px;
+		height: auto;
+		margin-right: 24px;
+		margin-top: 12px;
+	}
+
 	nav ul li {
 		display: none;
+	}
+
+	.content {
+		margin-top: 38vh;
+	}
+
+	h4 {
+		font-size: 12px;
+	}
+
+	h1 {
+		font-size: 42px;
+	}
+
+	h3 {
+		font-size: 17px;
+	}
+
+	.about {
+		padding: 160px 0px 40px 0px;
+		margin-top: 60vh;
+	}
+
+	.box {
+		flex-direction: column;
+		margin: 0px 20px 0 0;
+	}
+
+	.card {
+		height: 320px;
+		width: 280px;
+		margin: 0px 45px 30px;
+	}
+
+	.title h2 {
+		margin-bottom: 18px;
+	}
+
+	.card:hover {
+		border-style: solid;
+		border-width: 1px;
+		border-color: #10b2aa;
+		height: 320px;
+		width: 280px;
+		padding: 0 20px;
+	}
+
+	h5 {
+		font-size: 23px;
+	}
+
+	.pra p {
+		font-size: 16px;
+	}
+
+	#footer {
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+
+	.social {
+		margin-bottom: 60px;
+	}
+}
+
+@media screen and (max-width: 1392px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.main {
+		display: none;
+	}
+
+	.about-mobile img {
+		height: auto;
+	}
+
+	.about-text-mobile {
+		justify-content: center;
+		align-items: center;
+		width: 90%;
+		text-align: center;
+	}
+
+	.main-mobile {
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-text-mobile h2 {
+		color: white;
+		font-size: 75px;
+		text-transform: capitalize;
+		margin-bottom: 20px;
+	}
+
+	.about-text-mobile h5 {
+		color: white;
+		letter-spacing: 2px;
+		font-size: 22px;
+		margin-bottom: 25px;
+		margin-top: 20px;
+		text-transform: capitalize;
+	}
+
+	.about-text-mobile p {
+		color: rgb(163, 163, 163);
+		letter-spacing: 1px;
+		line-height: 28px;
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 531px) {
+
+	.about {
+		padding: 140px 0px 30px 0px;
+		margin-top: 48vh;
+	}
+
+	.about-text-mobile h2 {
+		font-size: 55px;
+	}
+
+	.about-text-mobile h5 {
+		font-size: 20px;
+	}
+
+	.about-text-mobile p {
+		font-size: 15px;
+	}
+
+	.title h2 {
+		font-size: 55px;
+	}
+}
+
+@media screen and (max-width: 447px) {
+	.title h2 {
+		font-size: 48px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.about-text-mobile h2 {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 541px) {
+	.title h2 {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.title h2 {
+		font-size: 45px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.title h2 {
+		font-size: 43px;
+	}
+}
+
+@media screen and (max-width: 379px) {
+	.title h2 {
+		font-size: 43px;
+	}
+}
+
+@media screen and (max-width: 883px) {
+	.more {
+		padding: 60px 0px 180px 0px;
+		width: 90%;
+	}
+
+	.about-name {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+
+	.more-text {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 796px) {
+	.more {
+		padding: 60px 0px 180px 0px;
+		width: 90%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.more-img {
+		width: 340px;
+		margin-right: 0px;
+	}
+
+	.name {
+		font-size: 35px;
+	}
+}
+
+@media screen and (max-width: 796px) {
+	.more {
+		padding: 60px 0px 180px 0px;
+		width: 90%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.more-img {
+		width: 320px;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 361px) {
+	.more-img {
+		width: 310px;
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	.video {
+		width: 800px;
+		height: 600px;
+	}
+}
+
+@media screen and (max-width: 845px) {
+	.video {
+		width: 700px;
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 738px) {
+	.video {
+		width: 600px;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 628px) {
+	.video {
+		width: 500px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 534px) {
+	.content-video {
+		padding: 20px 0;
+	}
+
+	.video {
+		width: 480px;
+		height: 280px;
+	}
+}
+
+@media screen and (max-width: 514px) {
+	.video {
+		width: 450px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 476px) {
+	.video {
+		width: 420px;
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 418px) {
+	.video {
+		width: 400px;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 361px) {
+	.video {
+		width: 380px;
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 713px) {
+	#content-footer {
+		flex-direction: column;
+	}
+
+	.content-footer {
+		text-align: center;
+		height: 160px;
+	}
+
+	.line {
+		width: 70%;
+		height: .6px;
+		margin-left: 0px;
+	}
+
+	.contato {
+		flex-direction: row;
+		margin: 12px 0px 0px 0px;
+		height: 80px;
+		width: 62vh;
+		align-items: center;
+		justify-content: space-evenly;
+		top: 15px;
+	}
+
+	.numero {
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+}
+
+@media screen and (max-width: 532px) {
+	#footer {
+		padding: 0px 15px;
+	}
+
+	.title-footer {
+		font-size: 24px;
+	}
+
+	.description-footer {
+		font-size: 14px;
+	}
+
+	.numero {
+		font-size: 14px;
+	}
+
+	.gmail {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.title-footer {
+		font-size: 24px;
+	}
+
+	.contato {
+		flex-direction: column;
 	}
 }
