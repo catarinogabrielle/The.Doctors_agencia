@@ -234,7 +234,7 @@ h5 {
 .more {
 	display: flex;
 	justify-content: center;
-	padding: 180px 0;
+	padding: 140px 0 190px 0;
 	width: 90%;
 	background-color: #0e0e0e;
 }
