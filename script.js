@@ -55,7 +55,7 @@ sr.reveal('.content', {
 
 sr.reveal('.about-img', {
     rotate: { x: 0, y: 80, z: 0 },
-    duration: 1000
+    duration: 1400
 });
 
 sr.reveal('.about-text h2', { duration: 1000 });
@@ -65,13 +65,18 @@ sr.reveal('.about-text h5', { duration: 1000 });
 sr.reveal('.about-text p', { duration: 1000 });
 
 sr.reveal('.box', {
-    rotate: { x: 100, y: 0, z: 0 },
-    duration: 1200
+    rotate: { x: 0, y: 90, z: 0 },
+    duration: 1800,
 });
 
-sr.reveal('.more-content', { duration: 1000 });
+sr.reveal('.box2', {
+    rotate: { x: 0, y: 90, z: 0 },
+    duration: 2400,
+});
+
+sr.reveal('.more-content', { duration: 1200 });
 
 sr.reveal('#content-footer', {
     rotate: { x: 0, y: 80, z: 0 },
-    duration: 1000
+    duration: 1400
 });
