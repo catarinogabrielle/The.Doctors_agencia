@@ -113,7 +113,7 @@ h4 {
 
 .about {
 	width: 100%;
-	padding: 160px 0px 160px 0px;
+	padding: 160px 0px 100px 0px;
 	background-color: #0e0e0e;
 	margin-top: 60vh;
 }
@@ -171,6 +171,78 @@ h4 {
 	line-height: 28px;
 	font-size: 18px;
 	margin-bottom: 45px;
+}
+
+.slider {
+	height: 500px;
+	margin: auto;
+	position: relative;
+	width: 90%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	background-color: #1f1f1f;
+	margin-top: 50px;
+}
+
+.slide-track {
+	display: flex;
+	width: calc(550px * 18);
+	animation: scroll 50s linear infinite;
+}
+
+.slide-track:hover {
+	animation-play-state: paused;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(calc(-250px * 9));
+	}
+}
+
+.slide {
+	height: 420px;
+	width: 550px;
+	display: flex;
+	align-content: center;
+	padding: 16px;
+	perspective: 250px;
+	overflow: clip;
+}
+
+img {
+	width: 100%;
+	transition: transform 1s;
+}
+
+img:hover {
+	transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+	background: linear-gradient(to right, rgba(14, 14, 14, 1)0%, rgba(14, 14, 14, 0)100%);
+	content: '';
+	height: 100%;
+	position: absolute;
+	width: 15%;
+	z-index: 2;
+}
+
+.slider::before {
+	left: 0;
+	top: 0;
+}
+
+.slider::after {
+	right: 0;
+	top: 0;
+	transform: rotateZ(180deg);
 }
 
 .service {
@@ -574,7 +646,7 @@ footer {
 	.main {
 		display: none;
 	}
-	
+
 	.main-mobile {
 		margin: 0 auto;
 		display: flex;
@@ -651,6 +723,22 @@ footer {
 	.title h2 {
 		font-size: 48px;
 	}
+
+	.slider {
+		height: 260px;
+		margin-top: 60px;
+	}
+
+	.slide-track {
+		width: calc(280px * 18);
+	}
+
+	.slide {
+		height: 230px;
+		width: 280px;
+		perspective: 180px;
+	}
+
 }
 
 @media screen and (max-width: 400px) {

@@ -80,3 +80,5 @@ sr.reveal('#content-footer', {
     rotate: { x: 0, y: 80, z: 0 },
     duration: 1400
 });
+
+sr.reveal('.slider', { duration: 1200 });
