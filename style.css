@@ -739,6 +739,11 @@ footer {
 		perspective: 180px;
 	}
 
+	.slider::before,
+	.slider::after {
+		background: linear-gradient(to right, rgba(14, 14, 14, 1)0%, rgba(14, 14, 14, 0)0%);
+	}
+
 }
 
 @media screen and (max-width: 400px) {
