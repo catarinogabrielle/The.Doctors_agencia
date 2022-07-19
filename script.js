@@ -81,4 +81,37 @@ sr.reveal('#content-footer', {
     duration: 1400
 });
 
-sr.reveal('.slider', { duration: 1200 });
+sr.reveal('.slider', {
+    rotate: { x: 80, y: 0, z: 0 },
+    duration: 1200
+});
+
+sr.reveal('.card1', {
+    rotate: { x: 0, y: 80, z: 0 },
+    duration: 1900
+});
+
+sr.reveal('.card2', {
+    rotate: { x: 0, y: 80, z: 0 },
+    duration: 1900
+});
+
+sr.reveal('.card3', {
+    rotate: { x: 0, y: 80, z: 0 },
+    duration: 1900
+});
+
+sr.reveal('.card4', {
+    rotate: { x: 0, y: 80, z: 0 },
+    duration: 1900
+});
+
+sr.reveal('.card5', {
+    rotate: { x: 0, y: 80, z: 0 },
+    duration: 1900
+});
+
+sr.reveal('.card6', {
+    rotate: { x: 0, y: 80, z: 0 },
+    duration: 1900
+});

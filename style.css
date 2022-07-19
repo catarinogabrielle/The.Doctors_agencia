@@ -248,7 +248,7 @@ img:hover {
 .service {
 	background: #0e0e0e;
 	width: 100%;
-	padding: 150px 0px;
+	padding: 150px 0 30px 0;
 }
 
 .title h2 {
@@ -608,15 +608,120 @@ footer {
 	}
 
 	.box3 {
-		height: 500px;
-	margin: auto;
-	position: relative;
-	width: 90%;
-	display: grid;
-	place-items: center;
-	overflow: hidden;
-	background-color: #1f1f1f;
-	margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card1 {
+		height: 335px;
+		width: 280px;
+		padding: 0 20px;
+		background: #191919;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 12px 0 60px 0;
+		transition: 0.5s;
+		text-align: center;
+	}
+
+	.card2 {
+		height: 335px;
+		width: 280px;
+		padding: 0 20px;
+		background: #191919;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 60px 0;
+		transition: 0.5s;
+		text-align: center;
+	}
+
+	.card3 {
+		height: 335px;
+		width: 280px;
+		padding: 0 20px;
+		background: #191919;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 60px 0;
+		transition: 0.5s;
+		text-align: center;
+	}
+
+	.card4 {
+		height: 335px;
+		width: 280px;
+		padding: 0 20px;
+		background: #191919;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 60px 0;
+		transition: 0.5s;
+		text-align: center;
+	}
+
+	.card5 {
+		height: 335px;
+		width: 280px;
+		padding: 0 20px;
+		background: #191919;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 60px 0;
+		transition: 0.5s;
+		text-align: center;
+	}
+
+	.card6 {
+		height: 335px;
+		width: 280px;
+		padding: 0 20px;
+		background: #191919;
+		border-radius: 20px;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 0 0 10px 0;
+		transition: 0.5s;
+		text-align: center;
+	}
+
+	.card1:hover,
+	.card2:hover,
+	.card3:hover,
+	.card4:hover,
+	.card5:hover,
+	.card6:hover {
+		height: 342px;
+		width: 280px;
+		background: #191919;
+		padding: 0 22px;
+		border-style: solid;
+		border-width: 1px;
+		border-color: #10b2aa;
 	}
 
 	#footer {
