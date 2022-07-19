@@ -273,6 +273,10 @@ img:hover {
 	margin: 80px 20px 0px;
 }
 
+.box3 {
+	display: none;
+}
+
 .card {
 	height: 345px;
 	width: 300px;
@@ -596,40 +600,23 @@ footer {
 	}
 
 	.box {
-		flex-direction: column;
-		margin: 0px 20px 0 0;
+		display: none;
 	}
 
 	.box2 {
-		flex-direction: column;
-		margin: 0px 20px 0 0;
+		display: none;
 	}
 
-	.card {
-		height: 320px;
-		width: 270px;
-		margin: 0px 45px 30px;
-	}
-
-	.title h2 {
-		margin-bottom: 18px;
-	}
-
-	.card:hover {
-		border-style: solid;
-		border-width: 1px;
-		border-color: #10b2aa;
-		height: 320px;
-		width: 270px;
-		padding: 0 20px;
-	}
-
-	h5 {
-		font-size: 23px;
-	}
-
-	.pra p {
-		font-size: 16px;
+	.box3 {
+		height: 500px;
+	margin: auto;
+	position: relative;
+	width: 90%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	background-color: #1f1f1f;
+	margin-top: 50px;
 	}
 
 	#footer {
