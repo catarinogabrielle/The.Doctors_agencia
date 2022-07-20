@@ -1,26 +1,15 @@
 class MobileNavbar {
-    constructor(mobileMenu, navList, navLinks) {
+    constructor(mobileMenu, navList) {
         this.mobileMenu = document.querySelector(mobileMenu);
         this.navList = document.querySelector(navList);
-        this.navLinks = document.querySelectorAll(navLinks);
         this.activeClass = "active";
 
         this.handleClick = this.handleClick.bind(this);
     }
 
-    animateLinks() {
-        this.navLinks.forEach((link, index) => {
-            link.style.animation
-                ? (link.style.animation = "")
-                : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3
-                    }s`);
-        });
-    }
-
     handleClick() {
         this.navList.classList.toggle(this.activeClass);
         this.mobileMenu.classList.toggle(this.activeClass);
-        this.animateLinks();
     }
 
     addClickEvent() {
@@ -34,17 +23,32 @@ class MobileNavbar {
         return this;
     }
 }
+ 
+const home = document.querySelector('.home-mobile');
+const aboutmobile = document.querySelector('.about-mobile');
+const service = document.querySelector('.service-mobile');
+const more = document.querySelector('.more-mobile');
+const footer = document.querySelector('.footer-mobile');
+
+const menu = document.querySelector('.mobile-menu');
+const menuimg = document.querySelector('.img-menu');
+
+const hideMobileMenu = () => {
+    menu.classList.toggle('active');
+    menuimg.classList.toggle('active');
+};
+
+home.addEventListener('click', hideMobileMenu);
+aboutmobile.addEventListener('click', hideMobileMenu);
+service.addEventListener('click', hideMobileMenu);
+more.addEventListener('click', hideMobileMenu);
+footer.addEventListener('click', hideMobileMenu);
 
 const mobileNavbar = new MobileNavbar(
     ".img-menu",
     ".mobile-menu",
-    ".mobile-menu li",
 );
 mobileNavbar.init();
-
-let changeIcon = function (icon) {
-    icon.classList.toggle('fa-times')
-}
 
 window.sr = ScrollReveal({ reset: true });
 
