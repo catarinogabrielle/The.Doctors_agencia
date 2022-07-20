@@ -201,7 +201,7 @@ h4 {
 	}
 
 	100% {
-		transform: translateX(calc(-250px * 9));
+		transform: translateX(calc(-250px * 12));
 	}
 }
 
@@ -218,6 +218,7 @@ h4 {
 img {
 	width: 100%;
 	transition: transform 1s;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
 }
 
 img:hover {
@@ -546,6 +547,14 @@ footer {
 		display: none;
 	}
 
+	.main-mobile {
+		padding: 34px 0 0 0;
+	}
+
+	.about-text-mobile {
+		margin-top: 90px;
+	}
+
 	.mobile-menu {
 		z-index: 999;
 		display: flex;
@@ -579,7 +588,7 @@ footer {
 	}
 
 	.content {
-		margin-top: 38vh;
+		margin-top: 20vh;
 	}
 
 	h4 {
