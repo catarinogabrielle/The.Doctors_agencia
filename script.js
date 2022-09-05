@@ -23,11 +23,11 @@ class MobileNavbar {
         return this;
     }
 }
- 
+
 const home = document.querySelector('.home-mobile');
 const aboutmobile = document.querySelector('.about-mobile');
 const service = document.querySelector('.service-mobile');
-const more = document.querySelector('.more-mobile');
+//const more = document.querySelector('.more-mobile');
 const footer = document.querySelector('.footer-mobile');
 
 const menu = document.querySelector('.mobile-menu');
